@@ -1,0 +1,7 @@
+<p>Hijo works!</p>
+<p>El mensaje que viene del padre es: {{saludoDelPadre}}</p>
+<div id="contenedorEventos">
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Agregar a la lista de padre</button>
+</div>

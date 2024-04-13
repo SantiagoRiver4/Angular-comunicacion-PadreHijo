@@ -1,0 +1,27 @@
+<p>Padre works!</p>
+<p>{{nombre}}</p>
+<button (click)="cambiarNombre()">Change Name</button>
+<hr>
+<app-hijo [saludoDelPadre]="saludo"></app-hijo>
+<hr>
+<h1>Clase 16 de marzo 2024</h1>
+<h2>Property binding</h2>
+
+
+<form>
+    <input type="text" [value]="saludo">
+    <app-hijo [saludoDelPadre]="saludo"></app-hijo>
+</form>
+
+
+<div id="contenedorImagen">
+    <img [src]="rutaImagen" alt="anime">
+</div>
+
+<h1>Lista</h1>
+<app-hijo (newItemEvent)= "addItem($event)"></app-hijo>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<hr>
+<h2>Event binding</h2>
